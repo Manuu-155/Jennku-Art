@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Saira";
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url("./assets/fonts/Saira/Saira-VariableFont_wdth\,wght.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "ElmsSans";
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url("./assets/fonts/Elms_Sans/ElmsSans-VariableFont_wght.ttf") format("woff2");
+}
+
+@theme {
+    --color-Navy-950: hsl(0, 0%, 0%);
+    --color-Navy-900: hsl(0, 0%, 9%);
+    --color-Navy-850: hsl(0, 0%, 18%);
+    --color-Navy-800: hsl(0, 0%, 23%);
+
+    --color-Teal-800: hsl(190, 59%, 23%);
+    --color-Cyan-800: hsl(189, 80%, 55%);
+    --color-Red-800: hsl(0, 92%, 59%);
+    --color-White-800: hsl(0, 0%, 100%);
+    --font-Saira: "Saira";
+    --font-ElmsSans: "ElmsSans";
+}
+
+body{
+    @apply font-ElmsSans bg-Navy-950 text-White-800
+}
